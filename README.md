@@ -61,6 +61,9 @@ This part performs the translation task with fine-tuning of the mBART model on H
 
 # CODE SCREENSHOTS
 
+![Image6](810%20screenshots%20of%20code%20and%20results/pic6.png)
+
+![Image7](810%20screenshots%20of%20code%20and%20results/pic7.png)
 
 ![Image1](810%20screenshots%20of%20code%20and%20results/pic1.png)
 
