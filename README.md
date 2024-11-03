@@ -16,6 +16,7 @@ The data provided for this task was the PHINC dataset which consisted of 13.7k p
 The data creation process effectively creates a Romanized Hindi dataset from English text using translation and transliteration techniques, which can be used for language processing tasks such as hate speech analysis in Hinglish or other low-resource NLP tasks. The steps automate the collection, translation, transliteration, and saving of transformed text. The code produces a dataset where English sentences are translated to Hindi, then transliterated to Roman script, and saved for future Hinglish analysis.
 
 ### STEP BY STEP GUIDE:
+(Code for this step can be found in the file: 810_custom_dataset_generation_script_contains_backtranslation_and_transliteration (1).ipynb)
 
 1. Import Libraries and Load Data: Load numpy and pandas libraries for data handling. Load an English language dataset from a CSV file and extract a subset of tweets. Here, around 6300 new data points are created in batches on 100 samples.
 
@@ -32,6 +33,7 @@ Save the English text and Romanized Hindi translations to a CSV file.
 
 8. Repeat Process on Another Dataset
 
+9. Combine all the data obtained from separate runs into a master CSV file.
 
 
 
