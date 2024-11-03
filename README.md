@@ -72,6 +72,12 @@ This part performs the translation task with fine-tuning of the mBART model on H
 
 ![Image4](810%20screenshots%20of%20code%20and%20results/pic4.png)
 
+# EXAMPLE 
+- X_test[0]: Original English sentence in kaggle dataset
+- stripped_preds[0]: The result obtained after transliteration, backtranslation, and inference from the model trained.
+
+![Image5](810%20screenshots%20of%20code%20and%20results/pic5.png)
+
 
 
 
