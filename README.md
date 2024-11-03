@@ -59,9 +59,16 @@ This part performs the translation task with fine-tuning of the mBART model on H
 
 9. Model Saving: Saves the trained model to Google Drive. Finally, it saves and loads the model state to allow for further testing or use outside the training environment.
 
+# CODE SCREENSHOTS AND RESULT
 
 
+![Image1](810%20screenshots%20of%20code%20and%20results/pic1.png)
 
+![Image2](810%20screenshots%20of%20code%20and%20results/pic2.png)
+
+![Image3](810%20screenshots%20of%20code%20and%20results/pic3.png)
+
+![Image4](810%20screenshots%20of%20code%20and%20results/pic4.png)
 
 
 
