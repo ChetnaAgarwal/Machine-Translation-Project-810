@@ -35,6 +35,30 @@ Save the English text and Romanized Hindi translations to a CSV file.
 
 9. Combine all the data obtained from separate runs into a master CSV file.
 
+# MODEL TRAINING
+
+This part performs the translation task with fine-tuning of the mBART model on Hinglish-to-English data, and then evaluates the model’s performance based on BLEU scores.
+
+### STEP BY STEP GUIDE:
+
+1. Setup: Imports necessary libraries like numpy, pandas, and Hugging Face's transformers. It mounts Google Drive to save data and installs required packages (transformers, datasets, etc.).
+
+2. Data Preparation: Loads training and validation datasets, which contain Hinglish sentences and their English translations. It processes the datasets to create dictionaries of sentences, then converts them into a datasets.Dataset format.
+
+3. Tokenization: Loads the mBART tokenizer and prepares the data for training by tokenizing sentences, setting maximum input lengths for consistency.
+
+4. Model Initialization: Loads the mBART model, which is pretrained to handle multilingual tasks, for conditional generation tasks.
+
+5. Training Preparation: Sets up a training configuration, defining parameters like batch size, learning rate, and number of epochs.
+
+6. Trainer Setup: Uses Hugging Face’s Seq2SeqTrainer to handle the training loop, evaluation, and metrics computation (BLEU score for translation accuracy). Training begins with trainer.train().
+
+7. Test Set Processing: Loads test data, applies the same preprocessing and tokenization steps, and evaluates it against the model to generate predictions.
+
+8. BLEU Score Calculation: Compares model predictions against true translations using the BLEU score to measure accuracy.
+
+9. Model Saving: Saves the trained model to Google Drive. Finally, it saves and loads the model state to allow for further testing or use outside the training environment.
+
 
 
 
